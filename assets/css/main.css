@@ -246,7 +246,6 @@ input, select, textarea {
 		display: flex;
 		text-align: center;
 		justify-content: space-evenly;
-
 		align-self: center;
 		align-content: center;
 
