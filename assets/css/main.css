@@ -3,7 +3,7 @@
 
 
 html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+iframe, h1, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
@@ -18,7 +18,10 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -230,7 +233,24 @@ input, select, textarea {
 		left: 0;
 		opacity: 0.2;
 		position: fixed;
-		top: 100px;
+		top: 0px;
+	}
+	#projects{
+		display: flexbox;
+		width: 100%;
+		justify-items: center;
+		margin-top: 20px;
+	}
+	
+	ul#projectList{
+		display: flex;
+		text-align: center;
+		justify-content: space-evenly;
+
+		align-self: center;
+		align-content: center;
+
+		
 	}
 
 	@-moz-keyframes bg {
