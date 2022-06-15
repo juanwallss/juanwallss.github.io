@@ -328,7 +328,8 @@ a:hover {
 	top: 0px;
 }
 #projects {
-	display: flexbox;
+	display: flex;
+	flex-direction: column;
 	width: 100%;
 	justify-items: center;
 	margin-top: 20px;
@@ -336,6 +337,7 @@ a:hover {
 
 #projectList {
 	display: flex;
+	flex-direction: row;
 	text-align: center;
 	justify-content: space-evenly;
 	align-self: center;
