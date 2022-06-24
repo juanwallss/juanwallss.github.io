@@ -8,91 +8,227 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
 </head>
 
 <body class="is-preload">
-	<div id="wrapper">
-		<div id="bg"></div>
-		<div id="overlay"></div>
-		<div id="main">
 
-			<!-- Header -->
-			<header id="header">
-				<h1>Juan C. Paredes G.</h1>
-				<h2>Front-End Developer &nbsp;&bull;&nbsp; Sales Executive &nbsp;&bull;&nbsp; Software Engineering
-					Student</h2>
-				<p>I’m a software engineering student based in Mexicali. I have great interest in full-stack web
-					development,<br> WebApps,
-					artificial intelligence, and everything in between.
-				</p>
+	<!-- Header -->
+	<div id="header">
 
-			</header>
-			<div class="projects" id="projects">
-				<h2>Projects</h2>
-				<ul id="projectList">
-					<li>
-						<div class="project-container"><a href="https://bucolic-pasca-5760c7.netlify.app/"
-								target="_blank">Movie
-								Application</a>
-							<p>React App where I consumed <a
-									href="https://developers.themoviedb.org/3/getting-started/introduction"
-									target="_blank"><strong>TheMovieDB
-										API</strong></a> to fetch all recent movies with their
-								details, also added infinite-scroll feature.</p>
-						</div>
-					</li>
-					<li>
-						<div class="project-container"><a href="https://github.com/juanwallss/weatherapp"
-								target="_blank">Weather
-								Application</a>
-							<p>React App where I consumed the <a href="https://openweathermap.org/"
-									target="_blank"><strong>OpenWeather API</strong></a> to fetch
-								weather details for the given city.</p>
-						</div>
-					</li>
-					<li>
-						<div class="project-container"><a href="https://github.com/juanwallss/pokeapp"
-								target="_blank">Pokedex
-								Application</a>
-							<p>React App where I consumed <a href="https://pokeapi.co/"
-									target="_blank"><strong>PokeAPI</strong></a>
-								to fetch all pokemons with
-								their
-								details using <a href="https://www.npmjs.com/package/axios"
-									target="_blank"><strong>Axios
-										library</strong></a>, and adding the
-								infinite-scroll feature.</p>
-						</div>
-					</li>
-				</ul>
+		<div class="top">
+
+			<!-- Logo -->
+			<div id="logo">
+				<h1 id="title">Juan Paredes</h1>
+				<p>Full-Stack Web Developer Jr</p>
 			</div>
-			<nav>
+
+			<!-- Nav -->
+			<nav id="nav">
 				<ul>
-					<li><a href="https://www.facebook.com/juancpgotopo" target="_blank"
-							class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-					<li><a href="https://github.com/juanwallss" target="_blank" class="icon brands fa-github"><span
-								class="label">Github</span></a></li>
+					<li><a href="#top" id="top-link"><span class="icon solid fa-home">About me</span></a></li>
+					<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Projects</span></a>
 					</li>
-					<li><a href="https://www.linkedin.com/in/juan-paredes-173b1218b/" target="_blank"
-							class="icon brands fa-linkedin"></a></li>
+					<li><a href="#work" id="experience-link"><span class="icon solid fa-briefcase">Work
+								Experience</span></a>
+					</li>
+					<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a>
+					</li>
 				</ul>
 			</nav>
 
-			<!-- Footer -->
-			<footer id="footer">
-				<p class="copyright">Contact Info: juancparedesg@gmail.com</p>
-			</footer>
+		</div>
+
+		<div class="bottom">
+
+			<!-- Social Icons -->
+			<ul class="icons">
+				<li>
+					Download my resume
+				</li>
+				<li><a href="./images/English_CV.pdf" target="_blank" download class="icon solid fa-download"><span
+							class="label">PDF</span></a></li>
+
+			</ul>
 
 		</div>
+
 	</div>
-	<script>
-		window.onload = function () { document.body.classList.remove('is-preload'); }
-		window.ontouchmove = function () { return false; }
-		window.onorientationchange = function () { document.body.scrollTop = 0; }
-	</script>
+
+	<!-- Main -->
+	<div id="main">
+
+		<!-- Intro -->
+		<section id="top" class="one dark cover">
+			<div class="container">
+
+				<header>
+					<h2 class="alt">Hi! I'm <strong>Juan Paredes</strong>
+					</h2>
+					<p>I’m a software engineering student based in Mexicali. I have great interest in full-stack web
+						development,
+						WebApps, artificial intelligence, and everything in between.</p>
+				</header>
+
+				<footer>
+					<a href="#portfolio" class="button scrolly">See more..</a>
+				</footer>
+
+			</div>
+		</section>
+
+		<!-- Portfolio -->
+		<section id="portfolio" class="two">
+			<div class="container">
+				<h2>Projects<br><br></h2>
+				</header>
+
+
+				<div class="row">
+					<div class="col-4 col-12-mobile">
+						<article class="item">
+							<a href="https://bucolic-pasca-5760c7.netlify.app/" class="image fit" target="_blank"><img
+									src="images/movie.png" alt="" /></a>
+							<header>
+								<h2>Movie Application</h2>
+								<p>React App where I consumed <a
+										href="https://developers.themoviedb.org/3/getting-started/introduction"
+										target="_blank"><strong>TheMovieDB
+											API</strong></a> to fetch all recent movies with their
+									details, also added infinite-scroll feature.</p>
+								<button class="button">
+									<a href="https://bucolic-pasca-5760c7.netlify.app/" target="_blank">
+										<span class="icon fa-external-link"></span>
+										<span class="label">Demo</span>
+									</a>
+							</header>
+						</article>
+
+					</div>
+					<div class="col-4 col-12-mobile">
+						<article class="item">
+							<a href="https://deft-cactus-7c5b8a.netlify.app/" class="image fit" target="_blank"><img
+									src="images/pokemon.png" alt="" /></a>
+							<header>
+								<h2>Pokedex Application</h2>
+								<p>React App where I consumed <a href="https://pokeapi.co/api/v2/pokemon/?limit=151"
+										target="_blank"><strong>PokeAPI
+											API</strong></a> to fetch all 151 pokemon with their details, also added
+									infinite-scroll feature.</p>
+								<button class="button">
+									<a href="https://deft-cactus-7c5b8a.netlify.app/" target="_blank">
+										<span class="icon fa-external-link"></span>
+										<span class="label">Demo</span>
+									</a>
+							</header>
+						</article>
+					</div>
+					<div class="col-4 col-12-mobile">
+						<article class="item">
+							<a href="https://cheery-sorbet-360618.netlify.app/" class="image fit" target="_blank"><img
+									src="images/weatherApp.png" alt="" /></a>
+							<header>
+								<h2>Weather App</h2>
+								<p>React App where I consumed the <a href="https://openweathermap.org/"
+										target="_blank"><strong>OpenWeather
+											API</strong></a> to fetch
+									weather details for the given city.</p>
+								<button class="button">
+									<a href="https://cheery-sorbet-360618.netlify.app/" target="_blank">
+										<span class="icon fa-external-link"></span>
+										<span class="label">Demo</span>
+									</a>
+							</header>
+						</article>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+
+
+		<!-- Contact -->
+		<section id="work" class="four">
+			<div class="copyright">
+
+				<header>
+					<h2>Work Experience</h2>
+				</header>
+				<div class="row">
+					<div class="col-6 col-12-mobile">
+						<article class="item">
+							<header>
+								<h2>Telvista</h2>
+								<h3>Operations Supervisor (AvisBudget Group)<br><br></h3>
+								<ul class="nobul">
+									<li>
+										Managing a team (10 - 20 people).
+									</li>
+									<li>Constant feedback to agents to keep the improvement.</li>
+									<li>Interaction with customers in the U. S. A.</li>
+									<li>Constant monitoring to ensure the proper delivery of services.</li>
+								</ul>
+
+							</header>
+						</article>
+
+					</div>
+					<div class="col-6 col-12-mobile">
+						<article class="item">
+							<header>
+								<h2>Geologistic GPS </h2>
+								<h3>Full-Stack Web Developer<br>
+									<br>
+								</h3>
+								<ul class="nobul">
+									<li>
+										Relevant technologies/tools used: ReactJs, Sequelize, NodeJs, MySQL.
+									</li>
+									<li>Constant improvement and documentation during development.</li>
+									<li>Collaborating with senior engineers and product management following best
+										practices for the full software development
+										life cycle, including coding standards, code reviews, source control management,
+										build processes, testing, and
+										operations.</li>
+								</ul>
+
+							</header>
+						</article>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<section id="contact" class="four">
+			<div class="container">
+
+				<header>
+					<h2>Contact</h2>
+				</header>
+
+				<ul class="icons">
+					<li><a href="https://github.com/juanwallss" target="_blank" class="icon brands fa-github"><span
+								class="label">Github</span></a></li>
+					<li><a href="https://www.linkedin.com/in/juan-paredes-173b1218b/" target="_blank"
+							class="icon brands fa-linkedin"><span class="label">Email</span></a></li>
+				</ul>
+
+			</div>
+		</section>
+	</div>
+
+
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
