@@ -172,7 +172,7 @@ body {
 	font-size: 19pt;
 	font-weight: 300;
 	line-height: 1.75em;
-	color: #888;
+	color: rgb(136, 136, 136);
 }
 
 body.is-preload *,
@@ -204,7 +204,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: 300;
+	font-weight: 500;
 	color: #666;
 	line-height: 1.5em;
 }
@@ -218,7 +218,17 @@ h6 a {
 	color: inherit;
 	text-decoration: none;
 }
+i {
+	font-size: 100px;
+	box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
+	max-block-size: 100px;
+	min-width: 50px;
+}
 
+.skills {
+	display: flex;
+	flex-direction: column;
+}
 h1 a strong,
 h2 a strong,
 h3 a strong,
@@ -2044,7 +2054,7 @@ button,
 	color: #fff !important;
 	text-decoration: none;
 	padding: 0.75em 2.5em 0.75em 2.5em;
-	background-color: #8ebebc;
+	background-color: #00635f;
 	border: 0;
 	cursor: pointer;
 	background-image: -moz-linear-gradient(
@@ -2366,7 +2376,7 @@ button:active,
 
 #main > section.one {
 	background-color: #81918e;
-	background-image: url('../../images/backgroundimg.jfif');
+	background-image: url('../../images/stacked-steps-haikei.png');
 	z-index: -1;
 }
 .nobul {
