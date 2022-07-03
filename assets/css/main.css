@@ -223,6 +223,7 @@ i {
 	box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
 	max-block-size: 100px;
 	min-width: 50px;
+	color: #00635f;
 }
 
 .skills {
@@ -292,7 +293,7 @@ a {
 }
 
 a:hover {
-	color: #e27689;
+	color: #00635f;
 	border-bottom-color: rgba(255, 255, 255, 0);
 }
 
@@ -2123,7 +2124,9 @@ button:active,
 	text-decoration: none;
 	text-decoration: none;
 }
-
+#contact-icon {
+	font-size: 60px;
+}
 .icon:before {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
