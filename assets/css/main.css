@@ -88,7 +88,7 @@ video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	color: #969696;
+	color: #ffffff;
 }
 
 article,
@@ -2784,6 +2784,7 @@ img {
 	display: inline-block;
 	margin: 0 0.5em 0 0.5em;
 	transition: all 0.5s ease;
+	box-shadow: 0 12px 16px 0 rgb(0, 255, 136);
 }
 
 .name {
