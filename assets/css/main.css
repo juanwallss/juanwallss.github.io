@@ -205,7 +205,7 @@ h4,
 h5,
 h6 {
 	font-weight: 500;
-	color: #666;
+	color: #64ffda;
 	line-height: 1.5em;
 }
 
@@ -2089,7 +2089,8 @@ input[type='submit']:hover,
 input[type='reset']:hover,
 button:hover,
 .button:hover {
-	background-color: #9ececc;
+	background-color: #0e2727;
+	color: #fff;
 }
 
 input[type='button']:active,
@@ -2097,7 +2098,7 @@ input[type='submit']:active,
 input[type='reset']:active,
 button:active,
 .button:active {
-	background-color: #7eaeac;
+	background-color: #084745;
 }
 
 /* Item */
@@ -2108,12 +2109,17 @@ button:active,
 }
 
 .item header {
-	background: #fff;
+	background-color: #240855;
 	margin: 0;
 	padding: 1em 0 1em 0;
 	font-size: 0.8em;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
-
+img {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
 .item header h3 {
 	font-size: 1em;
 }
@@ -2126,6 +2132,10 @@ button:active,
 }
 #contact-icon {
 	font-size: 60px;
+}
+#contact-icon:hover {
+	font-size: 65px;
+	transition: all 0.5s linear;
 }
 .icon:before {
 	-moz-osx-font-smoothing: grayscale;
@@ -2181,6 +2191,7 @@ button:active,
 	text-align: right;
 	top: 0;
 	width: 375px;
+	background-color: #170536;
 }
 
 #header .top {
@@ -2228,7 +2239,7 @@ button:active,
 
 #logo h1 {
 	position: relative;
-	color: #fff;
+	color: #64ffda;
 	font-weight: 600;
 	font-size: 1em;
 	line-height: 1em;
@@ -2345,7 +2356,6 @@ button:active,
 }
 
 #main > section.dark {
-	color: #ddd;
 	color: rgba(255, 255, 255, 0.75);
 }
 
@@ -2358,7 +2368,8 @@ button:active,
 }
 
 #main > section.dark strong {
-	color: #fff;
+	color: #64ffda;
+	font-weight: bold;
 	border-color: inherit;
 }
 
@@ -2378,23 +2389,23 @@ button:active,
 }
 
 #main > section.one {
-	background-color: #81918e;
-	background-image: url('../../images/stacked-steps-haikei.png');
+	background-color: #170536;
+
 	z-index: -1;
 }
 .nobul {
 	list-style: none;
 }
 #main > section.two {
-	background-color: #f5fafa;
+	background-color: #170536;
 }
 
 #main > section.three {
-	background-color: #ecf1f1;
+	background-color: #170536;
 }
 
 #main > section.four {
-	background-color: #e8edec;
+	background-color: #170536;
 }
 
 /* Wide */
@@ -2767,4 +2778,13 @@ button:active,
 	#footer .copyright li:first-child {
 		margin-top: 0;
 	}
+}
+.icon-item:hover {
+	display: inline-block;
+	margin: 0 0.5em 0 0.5em;
+	transition: all 0.5s ease;
+}
+
+.name {
+	color: black;
 }

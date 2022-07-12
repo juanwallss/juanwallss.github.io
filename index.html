@@ -47,7 +47,7 @@
 			<!-- Social Icons -->
 			<ul class="icons">
 				<li title="Change to Spanish"><a href="./spanish.html" id="contact-link"><span
-							class="icon solid fa-passport">Es</span></a>
+							class="icon solid fa-passport"></span></a>
 				</li>
 				<li title="Download CV"><a href="./images/JCPG_CV.pdf" target="_blank" download
 						class="icon solid fa-download"><span class="label">PDF</span></a></li>
@@ -66,7 +66,7 @@
 			<div class="container">
 
 				<header>
-					<h2 class="alt">Hey, I'm <strong>Juan Paredes!</strong>
+					<h2 class="alt">Hey, I'm <span class="name"><strong>Juan Paredes</strong></span>.
 					</h2>
 					<p>A software engineering student based in Mexicali, B.C., Mexico. <br>Im a self-taught
 						Front-end Developer,<br>
@@ -92,7 +92,7 @@
 						<article class="item">
 							<a href="https://bucolic-pasca-5760c7.netlify.app/" class="image fit" target="_blank"><img
 									src="images/movie.png" alt="" /></a>
-							<header>
+							<header class="cards">
 								<h2>Movie Application</h2>
 								<p>React App where I consumed <a
 										href="https://developers.themoviedb.org/3/getting-started/introduction"
@@ -112,53 +112,64 @@
 						<article class="item">
 							<a href="https://deft-cactus-7c5b8a.netlify.app/" class="image fit" target="_blank"><img
 									src="images/pokemon.png" alt="" /></a>
-							<header>
-								<h2>Pokedex Application</h2>
-								<p>React App where I consumed <a href="https://pokeapi.co/api/v2/pokemon/?limit=151"
-										target="_blank"><strong>PokeAPI
-											API</strong></a> to fetch all 151 pokemon with their details, also added
-									infinite-scroll feature.</p>
-								<button class="button">
-									<a href="https://deft-cactus-7c5b8a.netlify.app/" target="_blank">
-										<span class="icon fa-external-link"></span>
-										<span class="label">Demo</span>
-									</a>
-							</header>
+							<div class="cards">
+								<header>
+									<h2>Pokedex Application</h2>
+									<p>React App where I consumed <a href="https://pokeapi.co/api/v2/pokemon/?limit=151"
+											target="_blank"><strong>PokeAPI
+												API</strong></a> to fetch all 151 pokemon with their details, also added
+										infinite-scroll feature.</p>
+									<button class="button">
+										<a href="https://deft-cactus-7c5b8a.netlify.app/" target="_blank">
+											<span class="icon fa-external-link"></span>
+											<span class="label">Demo</span>
+										</a>
+								</header>
+							</div>
+
+
+
 						</article>
 					</div>
 					<div class="col-4 col-12-mobile">
 						<article class="item">
 							<a href="https://cheery-sorbet-360618.netlify.app/" class="image fit" target="_blank"><img
 									src="images/weatherApp.png" alt="" /></a>
-							<header>
-								<h2>Weather App</h2>
-								<p>React App where I consumed the <a href="https://openweathermap.org/"
-										target="_blank"><strong>OpenWeather
-											API</strong></a> to fetch
-									weather details for the given city.</p>
-								<button class="button">
-									<a href="https://cheery-sorbet-360618.netlify.app/" target="_blank">
-										<span class="icon fa-external-link"></span>
-										<span class="label">Demo</span>
-									</a>
-							</header>
+
+							<div class="cards">
+								<header>
+									<h2>Weather App</h2>
+									<p>React App where I consumed the <a href="https://openweathermap.org/"
+											target="_blank"><strong>OpenWeather
+												API</strong></a> to fetch
+										weather details for the given city.</p>
+									<button class="button">
+										<a href="https://cheery-sorbet-360618.netlify.app/" target="_blank">
+											<span class="icon fa-external-link"></span>
+											<span class="label">Demo</span>
+										</a>
+								</header>
+							</div>
 						</article>
 					</div>
 					<div class="col-4 col-12-mobile">
 						<article class="item">
 							<a href="https://62bbc9fd9e7f0550bad29d89--roaring-florentine-26bba4.netlify.app/"
 								class="image fit" target="_blank"><img src="images/passwordgenerator.png" alt="" /></a>
-							<header>
-								<h2>Password Generator</h2>
-								<p>Simple ReactJs app that generates random passwords by a given length and given
-									charset using the semantic-ui-react components</p>
-								<button class="button">
-									<a href="https://62bbc9fd9e7f0550bad29d89--roaring-florentine-26bba4.netlify.app/"
-										target="_blank">
-										<span class="icon fa-external-link"></span>
-										<span class="label">Demo</span>
-									</a>
-							</header>
+
+							<div class="cards">
+								<header>
+									<h2>Password Generator</h2>
+									<p>Simple ReactJs app that generates random passwords by a given length and given
+										charset using the semantic-ui-react components</p>
+									<button class="button">
+										<a href="https://62bbc9fd9e7f0550bad29d89--roaring-florentine-26bba4.netlify.app/"
+											target="_blank">
+											<span class="icon fa-external-link"></span>
+											<span class="label">Demo</span>
+										</a>
+								</header>
+							</div>
 						</article>
 					</div>
 				</div>
@@ -227,16 +238,16 @@
 				</header>
 				<div class="skills">
 					<ul class="icons">
-						<li title="ReactJs"><i class="devicon-react-original "></i></li>
-						<li title="JavaScript"><i class="devicon-javascript-plain "></i></li>
-						<li title="HTML5"><i class="devicon-html5-plain "></i></li>
-						<li title="CSS3"><i class="devicon-css3-plain "></i></li>
-						<li title="NodeJs"><i class="devicon-nodejs-plain "></i></li>
-						<li title="ExpressJS">
+						<li class="icon-item" title="ReactJs"><i class="devicon-react-original "></i></li>
+						<li class="icon-item" title="JavaScript"><i class="devicon-javascript-plain "></i></li>
+						<li class="icon-item" title="HTML5"><i class="devicon-html5-plain "></i></li>
+						<li class="icon-item" title="CSS3"><i class="devicon-css3-plain "></i></li>
+						<li class="icon-item" title="NodeJs"><i class="devicon-nodejs-plain "></i></li>
+						<li class="icon-item" title="ExpressJS">
 							<i class="devicon-express-original"></i>
 
 						</li>
-						<li title="Java"><i class="devicon-java-plain "></i>
+						<li class="icon-item" title="Java"><i class="devicon-java-plain "></i>
 						</li>
 					</ul>
 				</div>
