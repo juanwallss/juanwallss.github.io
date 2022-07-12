@@ -88,6 +88,7 @@ video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	color: #969696;
 }
 
 article,
@@ -2111,7 +2112,7 @@ button:active,
 .item header {
 	background-color: #240855;
 	margin: 0;
-	padding: 1em 0 1em 0;
+	padding: 1em 2em 1em 2em;
 	font-size: 0.8em;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
