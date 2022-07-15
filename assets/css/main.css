@@ -2783,10 +2783,33 @@ img {
 .icon-item:hover {
 	display: inline-block;
 	margin: 0 0.5em 0 0.5em;
+
 	transition: all 0.5s ease;
 	box-shadow: 0 12px 16px 0 rgb(0, 255, 136);
 }
 
 .name {
 	color: black;
+}
+.title {
+	display: block;
+	white-space: nowrap;
+	border-right: 4px solid;
+	width: 21ch;
+	animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
+	overflow: hidden;
+}
+@keyframes typing {
+	from {
+		width: 0;
+	}
+}
+@keyframes blink {
+	50% {
+		border-color: transparent;
+	}
+}
+.animated {
+	display: flex;
+	justify-content: center;
 }
