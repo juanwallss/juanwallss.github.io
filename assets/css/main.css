@@ -2795,6 +2795,7 @@ img {
 	display: block;
 	white-space: nowrap;
 	border-right: 4px solid;
+	height: 80%;
 	width: 21ch;
 	animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
 	overflow: hidden;
