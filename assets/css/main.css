@@ -2799,6 +2799,7 @@ img {
 	width: 21ch;
 	animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
 	overflow: hidden;
+	vertical-align: middle;
 }
 @keyframes typing {
 	from {
