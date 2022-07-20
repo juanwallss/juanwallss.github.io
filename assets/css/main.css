@@ -2130,6 +2130,7 @@ img {
 	height: 100%;
 }
 .work-experience header {
+	border-radius: 2%;
 	background-color: #240855;
 	margin: 0;
 	padding: 1em 2em 1em 2em;
@@ -2817,7 +2818,6 @@ img {
 	width: 21ch;
 	animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
 	overflow: hidden;
-	vertical-align: middle;
 }
 @keyframes typing {
 	from {
