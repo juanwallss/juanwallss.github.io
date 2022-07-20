@@ -2124,6 +2124,23 @@ img {
 .item header h3 {
 	font-size: 1em;
 }
+.work-experience {
+	box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
+	margin-bottom: 40px;
+	height: 100%;
+}
+.work-experience header {
+	background-color: #240855;
+	margin: 0;
+	padding: 1em 2em 1em 2em;
+	box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
+	font-size: 0.8em;
+}
+
+.work-experience header h3 {
+	font-size: 1em;
+	color: #00635f;
+}
 
 /* Icons */
 
@@ -2395,7 +2412,8 @@ img {
 	z-index: -1;
 }
 .nobul {
-	list-style: none;
+	font-size: 1.1rem;
+	text-align: left;
 }
 #main > section.two {
 	background-color: #170536;
