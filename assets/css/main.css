@@ -2841,7 +2841,6 @@ img {
 	padding: 20px 15px;
 	border-radius: 4px;
 	background-color: #170536;
-
 	color: #f6f5f9;
 	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 	transform: translateY(30px);
@@ -2849,6 +2848,7 @@ img {
 	visibility: hidden;
 	animation: fade 4s linear forwards;
 	width: 100%;
+	animation-delay: 3000ms;
 	justify-content: center;
 	text-align: center;
 }
