@@ -2809,13 +2809,15 @@ img {
 
 .name {
 	color: black;
+	font-size: 80px;
 }
 .title {
 	display: block;
 	white-space: nowrap;
 	border-right: 4px solid;
-	height: 80%;
-	width: 21ch;
+	align-items: center;
+	height: 85%;
+	width: 100%;
 	animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
 	overflow: hidden;
 }
