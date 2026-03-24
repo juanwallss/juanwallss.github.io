@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+:root {
+  --term-bg: #0a0a0a;
+  --term-fg: #00ff41;
+  --term-dim: #008f11;
+  --term-border: #003b00;
+  --term-font: 'Fira Code', 'Courier New', monospace;
+}
+
+/* Global resets for terminal look */
+body, html {
+  background-color: var(--term-bg) !important;
+  color: var(--term-fg) !important;
+  font-family: var(--term-font) !important;
+}
+
+body * {
+  font-family: var(--term-font) !important;
+}
+
+/* Header/Sidebar */
+#header {
+  background: var(--term-bg) !important;
+  border-right: 2px solid var(--term-fg) !important;
+  text-align: left !important;
+  padding-top: 2em !important;
+}
+
+#header * {
+  color: var(--term-fg) !important;
+}
+
+#header .top {
+  border: none !important;
+}
+
+#header #logo {
+  padding: 0 1em !important;
+  text-align: left !important;
+}
+
+#header #logo h1 {
+  font-size: 1.5em !important;
+  color: var(--term-fg) !important;
+  margin-bottom: 0.5em !important;
+}
+
+#header #logo h1::before {
+  content: "guest@juan:~ $ ";
+  color: var(--term-dim) !important;
+}
+
+#header #nav ul li {
+  border: none !important;
+}
+
+#header #nav ul li a {
+  background: none !important;
+  color: var(--term-dim) !important;
+  border: 1px solid transparent !important;
+  border-radius: 0 !important;
+  display: block !important;
+  text-align: left !important;
+  padding-left: 1em !important;
+}
+
+#header #nav ul li a::before {
+  content: "./";
+  color: var(--term-dim) !important;
+}
+
+#header #nav ul li a:hover,
+#header #nav ul li a.active {
+  background: var(--term-border) !important;
+  border: 1px solid var(--term-fg) !important;
+  color: var(--term-fg) !important;
+}
+
+#header #nav ul li a span {
+    font-weight: bold;
+}
+
+#header #nav ul li a .icon {
+    display: none !important; /* Hide icons to keep it text-only */
+}
+
+/* Main Content */
+#main {
+  background: var(--term-bg) !important;
+}
+
+section {
+  background: var(--term-bg) !important;
+  border-bottom: 1px dashed var(--term-dim) !important;
+  padding: 4em 0 !important;
+  color: var(--term-fg) !important;
+}
+
+section h2, section h3 {
+  color: var(--term-fg) !important;
+  font-family: var(--term-font) !important;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+section h2::before {
+  content: "---[ ";
+  color: var(--term-dim);
+}
+section h2::after {
+  content: " ]---";
+  color: var(--term-dim);
+}
+
+/* Intro Section */
+#top {
+  background-image: none !important; /* remove image */
+  background: var(--term-bg) !important;
+  box-shadow: none !important;
+}
+#top .container {
+    text-align: left !important;
+}
+
+/* Cards & Work Experience */
+.work-experience, .item {
+  background: var(--term-bg) !important;
+  border: 1px solid var(--term-dim) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 1.5em !important;
+  margin-bottom: 2em !important;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.work-experience::before {
+  content: ">> Executing...";
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background: var(--term-bg);
+  padding: 0 5px;
+  font-size: 0.8em;
+  color: var(--term-dim);
+}
+
+.item::before {
+  content: ">> Displaying output...";
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background: var(--term-bg);
+  padding: 0 5px;
+  font-size: 0.8em;
+  color: var(--term-dim);
+  z-index: 10;
+}
+
+.work-experience:hover, .item:hover {
+  border-color: var(--term-fg) !important;
+  box-shadow: 0 0 10px var(--term-dim) !important;
+}
+
+/* Image styling in terminal */
+.item .image {
+  border-radius: 0 !important;
+  border-bottom: 1px solid var(--term-dim) !important;
+  position: relative;
+  display: block;
+  width: 100% !important;
+  overflow: hidden;
+}
+.item .image img {
+  filter: grayscale(100%) contrast(150%) brightness(80%) sepia(100%) hue-rotate(80deg) saturate(300%) !important;
+  opacity: 0.8;
+  mix-blend-mode: screen;
+  display: block;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* Cards contents */
+.cards p {
+    text-align: justify;
+}
+
+/* Buttons */
+.button, button {
+  background: transparent !important;
+  color: var(--term-fg) !important;
+  border: 1px solid var(--term-dim) !important;
+  border-radius: 0 !important;
+  font-family: var(--term-font) !important;
+  text-transform: uppercase !important;
+  box-shadow: none !important;
+  transition: all 0.2s;
+  padding: 0.5em 1em !important;
+}
+
+.button::before {
+  content: "> ";
+}
+
+.button:hover, button:hover {
+  background: var(--term-dim) !important;
+  color: var(--term-bg) !important;
+  border-color: var(--term-fg) !important;
+}
+
+/* Icons */
+ul.icons li * {
+  color: var(--term-fg) !important;
+}
+
+/* Skills ticker tape */
+.skills {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: var(--term-bg) !important;
+  border: 1px solid var(--term-dim) !important;
+  padding: 1.5em 0 1em 0;
+  white-space: nowrap;
+  display: flex;
+}
+
+.skills::before {
+  content: ">> MODULES_LOADED...";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--term-border);
+  padding: 2px 10px;
+  font-size: 0.8em;
+  color: var(--term-fg);
+  z-index: 10;
+  border-bottom: 1px dashed var(--term-dim);
+}
+
+/* Use relative container to hold both ULs for seamless sliding */
+.skills ul.icons {
+  display: flex !important;
+  flex: 0 0 auto;
+  gap: 2em;
+  margin: 0;
+  padding: 1em 2em;
+  animation: scroll-marquee 15s linear infinite;
+}
+
+.skills ul.icons:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.icon-item {
+  list-style: none !important;
+}
+
+.icon-item i {
+  color: var(--term-fg) !important;
+  font-size: 4em !important;
+  transition: 0.3s;
+  cursor: crosshair;
+  display: inline-block;
+}
+
+.icon-item i:hover {
+  text-shadow: 0 0 15px var(--term-fg) !important;
+  color: #fff !important;
+  transform: scale(1.2);
+}
+
+/* Terminal typing effect for scrolling */
+.terminal-hidden {
+  opacity: 0;
+  transform: translateY(15px);
+}
+
+.terminal-reveal {
+  animation: crtFadeIn 0.8s forwards;
+}
+
+@keyframes crtFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+    text-shadow: none;
+  }
+  50% {
+    text-shadow: 0 0 10px var(--term-fg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    text-shadow: 0 0 2px var(--term-fg);
+  }
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  animation: blink 1s step-end infinite;
+  background-color: var(--term-fg);
+  color: var(--term-fg);
+  margin-left: 5px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--term-bg);
+  border-left: 1px solid var(--term-dim);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--term-dim);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--term-fg);
+}
+
+/* CRT Scanline Effect Overlay */
+body::after {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 9999;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
